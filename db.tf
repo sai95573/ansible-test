@@ -1,6 +1,6 @@
 resource "aws_instance" "db_server" {
   count = var.db_want == true ? var.db_count : 0
-  ami           = data.aws_ami.ubuntu.id
+  ami           = ami-0d0cd93f2bb1fdf17
   instance_type = var.instance_type
   key_name      = var.key_name
   
